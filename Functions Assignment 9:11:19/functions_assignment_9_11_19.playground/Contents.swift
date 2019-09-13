@@ -23,9 +23,15 @@ func shout(input: String) -> String {
 }
 print(shout(input: "YO"))
 
-//This function turns an int into a string.
-func numberName(numbers: Int) -> String {
+//This function turns an int into a string. If the number is greater than 9, the function returns "nil"
+func numberName(numbers: Int) -> String? {
     let letters = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    if numbers <= 9 {
     return letters[numbers]
 }
-print(numberName(numbers: 5))
+    else {
+        return nil
+    }
+}
+print(numberName(numbers: 7)!)
+
