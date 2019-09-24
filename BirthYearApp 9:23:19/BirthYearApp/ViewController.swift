@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yourBirthYear: UIButton!
     @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var birthdaySwitch: UISwitch!
+    @IBOutlet weak var ageLabel: UILabel!
     
     
     
@@ -25,27 +26,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ageSlider(_ sender: UISlider) {
-        ageLabel.text = String(Int(sender.value)) + " years old"
+        ageLabel.text = String(Int(sender.value))
     }
     
-    @IBOutlet weak var ageLabel: UILabel!
     
-
-    @IBAction func yourBirthYear(_ sender: UIButton) {
-        age = Int(ageLabel.text ?? "human")
+    @IBAction func yourBirthYear(_ sender: Any) {
+        age = Int(ageLabel.text ?? "0")
         
         if birthdaySwitch.isOn {
             newYear += 0
         } else {
-            newYear += 1
+            newYear -= 1
         }
         
         newYear += year
         newYear -= age!
         
-       birthYearLabel.text = "You were born in \(newYear)"
+        birthYearLabel.text = "You were born in \(newYear)"
         
         newYear = 0
+    
     }
     
     
