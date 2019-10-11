@@ -18,38 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="last year you fell down a well and have been stuck in there ever since. While you had food, you are starting to run low." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9E-VP-0da">
-                                <rect key="frame" x="10" y="88" width="394" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Last year you fell down a well and have been stuck in there ever since. While you had food, you are starting to run low." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9E-VP-0da">
+                                <rect key="frame" x="20" y="337" width="374" height="143"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1p3-mj-DBh">
-                                <rect key="frame" x="133" y="271" width="148" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1p3-mj-DBh">
+                                <rect key="frame" x="133" y="519" width="148" height="40"/>
                                 <color key="backgroundColor" red="0.81112799188809837" green="1" blue="0.88729584168550879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gra-Cb-akw"/>
+                                    <constraint firstAttribute="width" constant="148" id="hNz-gW-0an"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.32851490045414433" green="0.53473121761658038" blue="0.2372513248236548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-4U-bPU">
-                                <rect key="frame" x="116" y="431" width="185" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-4U-bPU">
+                                <rect key="frame" x="116" y="616" width="185" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="SCREAM FOR HELP"/>
                                 <connections>
                                     <segue destination="kut-UG-61B" kind="show" id="VbV-ao-MW6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBv-7a-rCQ">
-                                <rect key="frame" x="116" y="515" width="186" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBv-7a-rCQ">
+                                <rect key="frame" x="116" y="700" width="186" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="TRY TO CLIMB OUT"/>
+                                <connections>
+                                    <segue destination="xmM-ci-gEw" kind="show" id="1cQ-9h-Hj6"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stuckinwell" translatesAutoresizingMaskIntoConstraints="NO" id="eDS-br-kZH">
+                                <rect key="frame" x="10" y="69" width="394" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="Axi-bC-tyn"/>
+                                    <constraint firstAttribute="width" constant="394" id="ujx-Qe-OmG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sBv-7a-rCQ" firstAttribute="height" secondItem="Wf2-4U-bPU" secondAttribute="height" id="1Cb-0V-PAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eDS-br-kZH" secondAttribute="trailing" constant="10" id="1XH-Kd-0Z3"/>
+                            <constraint firstItem="eDS-br-kZH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="8MP-sz-03q"/>
+                            <constraint firstItem="V9E-VP-0da" firstAttribute="top" secondItem="eDS-br-kZH" secondAttribute="bottom" constant="25" id="f9N-1c-yLz"/>
+                            <constraint firstItem="eDS-br-kZH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gn6-g2-f4L"/>
+                            <constraint firstItem="sBv-7a-rCQ" firstAttribute="width" secondItem="Wf2-4U-bPU" secondAttribute="width" id="wYN-6X-vOm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="snh-aD-XOD"/>
@@ -66,33 +84,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-bn-OGt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-bn-OGt">
                                 <rect key="frame" x="20" y="51" width="374" height="344"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">You scream for help and attempt to attract anyone's attention. Soon, a villager shows up and tells you that he can make you a potion that can either make you jump super high or teleport out of the well. He asks you which one you prefer.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dye-fG-syh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dye-fG-syh">
                                 <rect key="frame" x="133" y="371" width="148" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.77517810880829019" green="0.19879314420975044" blue="0.69828385623774791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-3r-cN7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-3r-cN7">
                                 <rect key="frame" x="74" y="444" width="266" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="PICK THE JUMPING POTION"/>
                                 <connections>
                                     <segue destination="I3B-rg-kUC" kind="show" id="Hj1-Qd-MRx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-ud-zbd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-ud-zbd">
                                 <rect key="frame" x="40" y="512" width="335" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="PICK THE TELEPORTATION POTION"/>
                                 <connections>
@@ -101,6 +115,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dye-fG-syh" firstAttribute="width" secondItem="6DB-bn-OGt" secondAttribute="width" id="3mj-wz-15L"/>
+                            <constraint firstItem="dye-fG-syh" firstAttribute="height" secondItem="6DB-bn-OGt" secondAttribute="height" id="R7J-0j-vcI"/>
+                            <constraint firstItem="sNw-ud-zbd" firstAttribute="height" secondItem="WLY-3r-cN7" secondAttribute="height" id="lVQ-HX-0q3"/>
+                            <constraint firstItem="sNw-ud-zbd" firstAttribute="width" secondItem="WLY-3r-cN7" secondAttribute="width" id="v7I-21-GzF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vcn-FG-Oqz"/>
                     </view>
                 </viewController>
@@ -116,33 +136,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-uJ-uRb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-uJ-uRb">
                                 <rect key="frame" x="20" y="88" width="374" height="311"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The villager sends the jumping potion down the well using the bucket in the well. He says to only drink a fourth of the bottle and it will kick in the next morning.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bin-j5-rAI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bin-j5-rAI">
                                 <rect key="frame" x="133" y="374" width="148" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="1" green="0.26927920309999998" blue="0.1211928093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSh-JW-aHL">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSh-JW-aHL">
                                 <rect key="frame" x="114" y="452" width="186" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="DO WHAT HE SAYS "/>
                                 <connections>
                                     <segue destination="LTJ-gI-LH9" kind="show" id="jDC-mI-iXZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-bQ-2Pe">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-bQ-2Pe">
                                 <rect key="frame" x="59" y="511" width="296" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="DRINK THE WHOLE BOTTLE"/>
                                 <connections>
@@ -151,12 +167,109 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bin-j5-rAI" firstAttribute="width" secondItem="Owz-uJ-uRb" secondAttribute="width" id="6aG-t5-Y4r"/>
+                            <constraint firstItem="XVG-bQ-2Pe" firstAttribute="width" secondItem="Owz-uJ-uRb" secondAttribute="width" id="LlG-tN-ltM"/>
+                            <constraint firstItem="JSh-JW-aHL" firstAttribute="width" secondItem="Owz-uJ-uRb" secondAttribute="width" id="ayQ-Ng-bVn"/>
+                            <constraint firstItem="JSh-JW-aHL" firstAttribute="height" secondItem="Owz-uJ-uRb" secondAttribute="height" id="ewd-md-x1A"/>
+                            <constraint firstItem="bin-j5-rAI" firstAttribute="height" secondItem="Owz-uJ-uRb" secondAttribute="height" id="xef-aW-caN"/>
+                            <constraint firstItem="XVG-bQ-2Pe" firstAttribute="height" secondItem="Owz-uJ-uRb" secondAttribute="height" id="y0i-mT-hUm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dMc-7T-hGQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjy-2Z-GfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="98.4375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CVW-Se-TvE">
+            <objects>
+                <viewController id="CGc-n6-KEb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AXj-o4-ypo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qD-TU-log">
+                                <rect key="frame" x="20" y="113" width="374" height="274"/>
+                                <string key="text">You really don't want to leave anything in the well so you try to strap your belongings to you and scale the walls of the well. Unfortunately, you stuff weighs you down and fall breaking your neck. You die</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R9-Ep-VQU">
+                                <rect key="frame" x="129" y="425" width="165" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="TRY AGAIN"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zes-NE-dzM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8R9-Ep-VQU" firstAttribute="width" secondItem="9qD-TU-log" secondAttribute="width" id="gnV-cs-T9o"/>
+                            <constraint firstItem="8R9-Ep-VQU" firstAttribute="height" secondItem="9qD-TU-log" secondAttribute="height" id="lgK-Yn-OI0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JbU-aR-WTI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLh-x2-kib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-227.536231884058" y="745.98214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Crz-9D-8yC">
+            <objects>
+                <viewController id="xmM-ci-gEw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5dD-KP-FLg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You try to climb out of the well but you can't climb up with everything that you have in the well right now." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-yg-PNi">
+                                <rect key="frame" x="72" y="119" width="271" height="177"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DO YOU..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Pf-flv">
+                                <rect key="frame" x="133" y="365" width="148" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT1-95-3Xh">
+                                <rect key="frame" x="75" y="471" width="264" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="TAKE ALL OF YOUR THINGS"/>
+                                <connections>
+                                    <segue destination="CGc-n6-KEb" kind="show" id="n5a-nz-6Ri"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-Hb-Yk8">
+                                <rect key="frame" x="43" y="540" width="331" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="LEAVE YOUR THINGS IN THE WELL"/>
+                                <connections>
+                                    <segue destination="7vS-Zt-eby" kind="show" id="wzk-GB-LXp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nT1-95-3Xh" firstAttribute="height" secondItem="lWP-yg-PNi" secondAttribute="height" id="3sh-8c-EHY"/>
+                            <constraint firstItem="7gf-Hb-Yk8" firstAttribute="height" secondItem="lWP-yg-PNi" secondAttribute="height" id="5qa-NS-RsK"/>
+                            <constraint firstItem="tQ7-Pf-flv" firstAttribute="height" secondItem="lWP-yg-PNi" secondAttribute="height" id="75W-hg-4Og"/>
+                            <constraint firstItem="tQ7-Pf-flv" firstAttribute="width" secondItem="lWP-yg-PNi" secondAttribute="width" id="BqS-Pq-F8R"/>
+                            <constraint firstItem="nT1-95-3Xh" firstAttribute="width" secondItem="lWP-yg-PNi" secondAttribute="width" id="miw-oi-7fk"/>
+                            <constraint firstItem="7gf-Hb-Yk8" firstAttribute="width" secondItem="lWP-yg-PNi" secondAttribute="width" id="ubx-JQ-UfG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s00-bb-hp4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hu5-EQ-yVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465.21739130434787" y="739.95535714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lfa-uo-19T">
@@ -166,34 +279,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huR-Ci-Rl3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huR-Ci-Rl3">
                                 <rect key="frame" x="20" y="116" width="374" height="286"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The villager sends the teleportation potion down the well using the bucket. He says to only drink a fourth of the bottle and it will kick in the next morning.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhN-h4-JXq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhN-h4-JXq">
                                 <rect key="frame" x="143" y="410" width="167" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="DO YOU...">
                                     <color key="titleColor" red="0.55396968126296997" green="0.087284274399280548" blue="0.40489199757575989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-Ka-MAc">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-Ka-MAc">
                                 <rect key="frame" x="113" y="486" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="DO WHAT HE SAYS"/>
                                 <connections>
                                     <segue destination="5uk-Oz-z7x" kind="show" id="6as-4i-mcQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8av-rq-lKx">
-                                <rect key="frame" x="86" y="574" width="281" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8av-rq-lKx">
+                                <rect key="frame" x="86" y="565" width="281" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="DRINK THE WHOLE BOTTLE"/>
                                 <connections>
@@ -202,12 +311,60 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XhN-h4-JXq" firstAttribute="width" secondItem="huR-Ci-Rl3" secondAttribute="width" id="7uy-rI-qIC"/>
+                            <constraint firstItem="8av-rq-lKx" firstAttribute="height" secondItem="huR-Ci-Rl3" secondAttribute="height" id="Goc-hQ-5Ey"/>
+                            <constraint firstItem="2nf-Ka-MAc" firstAttribute="width" secondItem="huR-Ci-Rl3" secondAttribute="width" id="KBg-Eo-e0m"/>
+                            <constraint firstItem="XhN-h4-JXq" firstAttribute="height" secondItem="huR-Ci-Rl3" secondAttribute="height" id="bWZ-BT-OQq"/>
+                            <constraint firstItem="8av-rq-lKx" firstAttribute="width" secondItem="huR-Ci-Rl3" secondAttribute="width" id="c9x-CG-52c"/>
+                            <constraint firstItem="2nf-Ka-MAc" firstAttribute="height" secondItem="huR-Ci-Rl3" secondAttribute="height" id="yRf-e9-2Hc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Trc-Mp-9Pg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yl-ES-7nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1124.6376811594205" y="740.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uon-c0-gh0">
+            <objects>
+                <viewController id="7vS-Zt-eby" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E64-42-OC4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-GI-2rj">
+                                <rect key="frame" x="61" y="206" width="293" height="217"/>
+                                <string key="text">You leave your all of your belongings in the well and get the heck out of there. You eventually climb all the way up and get out of the well! You did it!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="well" translatesAutoresizingMaskIntoConstraints="NO" id="9qy-W9-hU7">
+                                <rect key="frame" x="33" y="659" width="351" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="H4j-j1-0PF"/>
+                                    <constraint firstAttribute="height" constant="183" id="ib3-Sr-zre"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvI-MD-rTF">
+                                <rect key="frame" x="114" y="508" width="188" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="START OVER"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gvI-MD-rTF" firstAttribute="height" secondItem="uFd-GI-2rj" secondAttribute="height" id="LqG-wk-a9J"/>
+                            <constraint firstItem="gvI-MD-rTF" firstAttribute="width" secondItem="uFd-GI-2rj" secondAttribute="width" id="y0T-oj-eqd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sdh-md-0Ls"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-xb-Wdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.27536231884062" y="1395.5357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jAK-Fk-ZXb">
@@ -217,17 +374,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZZ-IT-h7d">
-                                <rect key="frame" x="20" y="132" width="374" height="539"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZZ-IT-h7d">
+                                <rect key="frame" x="20" y="132" width="374" height="486"/>
                                 <string key="text">You drink the whole bottle, hoping that it kicks in immeadiately because you are extremely bored of being in the well and can't be down there any longer. You start feeling really jittery and try to teleport out of the well. You snap your fingers and shut your eyes to brace for whatever is about to happen. You end up in the middle of a dessert with no water and die.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-K0-6kI">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-K0-6kI">
                                 <rect key="frame" x="141" y="626" width="165" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="TRY AGAIN"/>
                                 <connections>
@@ -236,6 +391,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h8f-K0-6kI" firstAttribute="height" secondItem="AZZ-IT-h7d" secondAttribute="height" id="mhx-kp-lYM"/>
+                            <constraint firstItem="h8f-K0-6kI" firstAttribute="width" secondItem="AZZ-IT-h7d" secondAttribute="width" id="qAr-xw-vsB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pqC-cv-9HL"/>
                     </view>
                 </viewController>
@@ -251,17 +410,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4I7-Ah-cOp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4I7-Ah-cOp">
                                 <rect key="frame" x="20" y="145" width="374" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">You decide to listen to the villager and only drink a quarter of the bottle, you sleep well and wake up the next morning feeling bad. You call for the villager because you don't know how to teleport. He never comes back and you die.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-ke-iao">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-ke-iao">
                                 <rect key="frame" x="125" y="494" width="165" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="TRY AGAIN"/>
                                 <connections>
@@ -270,6 +427,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LDJ-ke-iao" firstAttribute="height" secondItem="4I7-Ah-cOp" secondAttribute="height" id="FkV-kp-7iY"/>
+                            <constraint firstItem="LDJ-ke-iao" firstAttribute="width" secondItem="4I7-Ah-cOp" secondAttribute="width" id="RTf-6N-t7F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LcT-Nc-hTc"/>
                     </view>
                 </viewController>
@@ -285,18 +446,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-cO-opB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-cO-opB">
                                 <rect key="frame" x="20" y="118" width="374" height="274"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">You try drinking the whole bottle and immeadiatley feel sick. Soon, you start feeling dizzy. You try jumping and jump way too high. You make it out of the well but fall really hard and die.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz9-CT-yAT">
-                                <rect key="frame" x="150" y="433" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz9-CT-yAT">
+                                <rect key="frame" x="116" y="433" width="182" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="TRY AGAIN"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="qMj-fl-HXz"/>
@@ -304,6 +463,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xz9-CT-yAT" firstAttribute="width" secondItem="c1J-cO-opB" secondAttribute="width" id="Kml-3H-uMI"/>
+                            <constraint firstItem="xz9-CT-yAT" firstAttribute="height" secondItem="c1J-cO-opB" secondAttribute="height" id="zHb-Rs-V1X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lTo-SQ-j70"/>
                     </view>
                 </viewController>
@@ -319,17 +482,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rH-wo-0SA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rH-wo-0SA">
                                 <rect key="frame" x="20" y="141" width="374" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">You decide to listen to the villager and only drink a quarter of the bottle, you sleep well and wake up the next moring feeling different. You gather all of your things and try to jump out of the well, you make it but scratch your knee.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-1A-MH2">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-1A-MH2">
                                 <rect key="frame" x="132" y="546" width="165" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="TRY AGAIN"/>
                                 <connections>
@@ -338,6 +499,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2cI-1A-MH2" firstAttribute="height" secondItem="8rH-wo-0SA" secondAttribute="height" id="apq-UK-Hv7"/>
+                            <constraint firstItem="2cI-1A-MH2" firstAttribute="width" secondItem="8rH-wo-0SA" secondAttribute="width" id="vwc-Iy-qN9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a0x-5k-gll"/>
                     </view>
                 </viewController>
@@ -364,7 +529,12 @@
             <point key="canvasLocation" x="-225" y="97"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stuckinwell" width="640" height="360"/>
+        <image name="well" width="275" height="183"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cpj-ol-Z2v"/>
+        <segue reference="SDP-k1-wcW"/>
+        <segue reference="mLw-rV-Dhz"/>
     </inferredMetricsTieBreakers>
 </document>
