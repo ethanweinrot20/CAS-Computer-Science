@@ -28,13 +28,33 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     @IBOutlet weak var numberPicker: UIPickerView!
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var apiLabel: UILabel!
     
-    var numbers = 
+    
+    var numbers: [String] = []
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
     return numbers[row]
     }
-
-
+    
+    @IBAction func selectButton(_ sender: Any) {
+        let row = numberPicker.selectedRow(inComponent: 0)
+        numberLabel.text = "You selected: "+numbers[row]
+        let numInt = Int(numbers[row])!
+        let url: URL = URL(string: "http://numbersapi.com/\(numInt)")!
+//        print(url)
+        let responseData: Data? = try? Data(contentsOf: url)
+        if let responseData = responseData{
+            
+            if let str = String(data: responseData, encoding: .utf8){
+                apiLabel.text = str
+            }
+        }
+    }
 }
+        
+    
+    
+
 
