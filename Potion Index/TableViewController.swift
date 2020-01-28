@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
         
         let decoder = JSONDecoder()
         let data = try! Data(contentsOf: FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true) .appendingPathComponent("savefile.json"))
-        let foundPotions = try! decoder.decode([Potion].self, from: data)
+        potions = try! decoder.decode([Potion].self, from: data)
         
 //        let potion1 = Potion()
 //        potion1.name = "Super Sauce"
@@ -61,6 +61,8 @@ class TableViewController: UITableViewController {
         let encoder = JSONEncoder()
         let dataToSave = try! encoder.encode(potions)
         try! dataToSave.write(to: url!)
+        
+        
 
     }
         

@@ -46,24 +46,14 @@ class ViewController: UIViewController {
         potion?.effect = effectInput.text ?? ""
         
         
-        
-        
-//        let data: [String: String] = [
-//            "name": nameInput.text ?? "N/A",
-//            "color": colorInput.text ?? "N/A",
-//            "effect": effectInput.text ?? "N/A"
-//        ]
-//        let url = getFileURL()
-//        if let jsonData = try? JSONSerialization.data(withJSONObject: data, options: []) {
-//            try!jsonData.write(to: url!)
-//            nameInput.text = ""
-//            colorInput.text = ""
-//            effectInput.text = ""
-//        } else {
-//            print("Saving Failed")
-//        }
     }
     
+    
+    @IBAction func deleteButton(_ sender: Any) {
+        nameInput.text = ""
+        colorInput.text = ""
+        effectInput.text = ""
+    }
     
 }
 
