@@ -52,6 +52,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         photos.append(image!)
     }
     
+    
+    @IBAction func uploadImage(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+                   
+            self.present(imagePicker, animated: true, completion: nil)
+               }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let gallery = segue.destination as? photoGalleryViewController, let sender = sender as? UIButton {
             if sender == galleryButton {

@@ -43,34 +43,8 @@ class photoGalleryViewController: UIViewController {
         
     }
     
-//    @IBAction func savePhotos(_ sender: Any) {
-//        let imageDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-//        let imageName = "image.jpg"
-//        let fileURL = imageDirectory.appendingPathComponent(imageName)
-//        if let data = images.jpegData(compressionQuality:  1.0), !FileManager.default.fileExists(atPath: fileURL.path) {
-//            do {
-//                // writes the image data to disk
-//                try data.write(to: fileURL)
-//                print("file saved")
-//            } catch {
-//                print("error saving file:", error)
-//            }
-//
-//        }
-//
-//    }
+
     
-    
-    @IBAction func savePhotos(_ sender: Any) {
-        let imageData = (stackView.image! as AnyObject).jpgData()
-        let compressedImage = UIImage(data: imageData!)
-        UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
-        
-        let alert = UIAlertController(title: "Photos Saved", message: "Your photos has been saved", preferredStyle: .alert)
-        let betAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alert.addAction(betAction)
-        self.present(alert, animated: true, completion: nil)
-    }
     
 
     /*
