@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crossroads_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-pp-YnF">
+                                <rect key="frame" x="0.0" y="289" width="414" height="532"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="2Sf-Tq-unc"/>
+                                    <constraint firstAttribute="height" constant="532" id="zEE-4r-wk2"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-rW-b8P">
+                                <rect key="frame" x="207" y="821" width="207" height="75"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="9qb-bs-xuT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Zoom In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MqQ-L3-jwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzt-Ws-Nd3">
+                                <rect key="frame" x="0.0" y="821" width="207" height="75"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="mvq-ax-rOd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Zoom Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoomOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mk4-lq-P2q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzZ-Ys-j4w">
+                                <rect key="frame" x="0.0" y="122" width="134" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="LvO-hL-fja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pyramids"/>
+                                <connections>
+                                    <action selector="pyramids:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzC-j0-Ca9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-cx-ukz">
+                                <rect key="frame" x="142" y="121" width="131" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Stonehenge"/>
+                                <connections>
+                                    <action selector="stonehenge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usg-Jq-dzZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEl-zL-kzQ">
+                                <rect key="frame" x="283" y="123" width="131" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="FFP-2I-1Ea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pisa"/>
+                                <connections>
+                                    <action selector="pisa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3E-N4-kUK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE WOULD YOU LIKE TO GO?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-TW-Wqe">
+                                <rect key="frame" x="46.5" y="91" width="321.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="960740" translatesAutoresizingMaskIntoConstraints="NO" id="GVt-xV-Gov">
+                                <rect key="frame" x="0.0" y="123" width="131" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stonehenge2007_07_30" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-sB-9pn">
+                                <rect key="frame" x="142" y="122" width="131" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leaning-tower-of-pisa" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-RU-YpW">
+                                <rect key="frame" x="283" y="122" width="131" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Sq-pp-YnF" firstAttribute="top" secondItem="RzZ-Ys-j4w" secondAttribute="bottom" constant="86" id="29d-ge-U4O"/>
+                            <constraint firstItem="hUd-rW-b8P" firstAttribute="leading" secondItem="qzt-Ws-Nd3" secondAttribute="trailing" id="72H-zD-zYi"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="top" secondItem="M2t-cx-ukz" secondAttribute="top" id="7EI-nC-O0u"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="baseline" secondItem="M2t-cx-ukz" secondAttribute="firstBaseline" id="A1L-y3-DES"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="top" secondItem="EEl-zL-kzQ" secondAttribute="top" id="D32-lP-K7z"/>
+                            <constraint firstItem="hUd-rW-b8P" firstAttribute="top" secondItem="7Sq-pp-YnF" secondAttribute="bottom" id="DBZ-AP-YDi"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="baseline" secondItem="EEl-zL-kzQ" secondAttribute="firstBaseline" id="EhD-fX-xsx"/>
+                            <constraint firstItem="hUd-rW-b8P" firstAttribute="width" secondItem="qzt-Ws-Nd3" secondAttribute="width" id="LDT-Ng-3dc"/>
+                            <constraint firstItem="TtG-TW-Wqe" firstAttribute="centerX" secondItem="M2t-cx-ukz" secondAttribute="centerX" id="RrR-G5-ntU"/>
+                            <constraint firstItem="M2t-cx-ukz" firstAttribute="leading" secondItem="RzZ-Ys-j4w" secondAttribute="trailing" constant="82" id="THA-ii-CG5"/>
+                            <constraint firstItem="hUd-rW-b8P" firstAttribute="height" secondItem="qzt-Ws-Nd3" secondAttribute="height" id="WTc-he-FcD"/>
+                            <constraint firstItem="hUd-rW-b8P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bxK-eL-Y9X"/>
+                            <constraint firstAttribute="bottom" secondItem="qzt-Ws-Nd3" secondAttribute="bottom" id="dHj-Ua-mOw"/>
+                            <constraint firstAttribute="bottom" secondItem="hUd-rW-b8P" secondAttribute="bottom" id="fI4-fZ-wia"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="top" secondItem="TtG-TW-Wqe" secondAttribute="bottom" constant="54" id="ias-Hh-cc3"/>
+                            <constraint firstItem="qzt-Ws-Nd3" firstAttribute="top" secondItem="7Sq-pp-YnF" secondAttribute="bottom" id="kVQ-TP-0dl"/>
+                            <constraint firstItem="7Sq-pp-YnF" firstAttribute="leading" secondItem="qzt-Ws-Nd3" secondAttribute="leading" id="sZb-Z3-YOZ"/>
+                            <constraint firstItem="RzZ-Ys-j4w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tul-rk-46M"/>
+                            <constraint firstItem="EEl-zL-kzQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uHg-aP-ajZ"/>
+                            <constraint firstItem="TtG-TW-Wqe" firstAttribute="centerX" secondItem="7Sq-pp-YnF" secondAttribute="centerX" id="v4s-D3-HJ4"/>
+                            <constraint firstItem="qzt-Ws-Nd3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xHU-bk-xhv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="7Sq-pp-YnF" id="yAg-wy-q5i"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="960740" width="750" height="445"/>
+        <image name="Stonehenge2007_07_30" width="2816" height="2112"/>
+        <image name="leaning-tower-of-pisa" width="968" height="681"/>
+    </resources>
+</document>
