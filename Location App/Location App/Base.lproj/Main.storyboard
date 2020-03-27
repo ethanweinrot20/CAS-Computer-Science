@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ydd-tA-hjJ">
+                                <rect key="frame" x="0.0" y="120" width="414" height="692"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="692" id="XFL-c6-yBD"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olV-8o-8ev">
+                                <rect key="frame" x="0.0" y="813" width="138" height="83"/>
+                                <state key="normal" title="ZOOM IN"/>
+                                <connections>
+                                    <action selector="zoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3F7-fH-dX8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elo-bp-0FA">
+                                <rect key="frame" x="276" y="813" width="138" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="4Zr-0Z-oMi"/>
+                                </constraints>
+                                <state key="normal" title="ZOOM OUT"/>
+                                <connections>
+                                    <action selector="zoomOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNw-Zf-ttd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWC-Op-OB7">
+                                <rect key="frame" x="20" y="64" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6O-Iw-lPC">
+                                <rect key="frame" x="138" y="812" width="138" height="84"/>
+                                <state key="normal" title="Find Ethan's Home"/>
+                                <connections>
+                                    <action selector="findMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPa-8V-7iq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="trailing" secondItem="elo-bp-0FA" secondAttribute="trailing" id="ILg-84-nql"/>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="centerX" secondItem="JWC-Op-OB7" secondAttribute="centerX" id="JgO-Kf-Vae"/>
+                            <constraint firstItem="P6O-Iw-lPC" firstAttribute="top" secondItem="ydd-tA-hjJ" secondAttribute="bottom" id="S4S-9x-Jju"/>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="leading" secondItem="olV-8o-8ev" secondAttribute="leading" id="Xg5-xg-C3x"/>
+                            <constraint firstItem="elo-bp-0FA" firstAttribute="leading" secondItem="P6O-Iw-lPC" secondAttribute="trailing" id="Xo1-wU-XbR"/>
+                            <constraint firstItem="elo-bp-0FA" firstAttribute="top" secondItem="olV-8o-8ev" secondAttribute="top" id="Xxg-IT-tEL"/>
+                            <constraint firstItem="JWC-Op-OB7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ztv-au-kfe"/>
+                            <constraint firstItem="elo-bp-0FA" firstAttribute="bottom" secondItem="P6O-Iw-lPC" secondAttribute="bottom" id="bAO-SX-1A7"/>
+                            <constraint firstItem="JWC-Op-OB7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bhB-zg-iij"/>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cZb-HT-om2"/>
+                            <constraint firstItem="JWC-Op-OB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ilQ-HI-U8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ydd-tA-hjJ" secondAttribute="bottom" constant="50" id="jif-K4-JK5"/>
+                            <constraint firstItem="elo-bp-0FA" firstAttribute="centerY" secondItem="P6O-Iw-lPC" secondAttribute="centerY" id="m8I-vC-pJD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="elo-bp-0FA" secondAttribute="bottom" constant="-34" id="o7Y-me-Lal"/>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="top" secondItem="JWC-Op-OB7" secondAttribute="bottom" constant="8" id="pd1-3c-DLt"/>
+                            <constraint firstItem="ydd-tA-hjJ" firstAttribute="centerX" secondItem="P6O-Iw-lPC" secondAttribute="centerX" id="qMJ-Q2-WN6"/>
+                            <constraint firstItem="elo-bp-0FA" firstAttribute="baseline" secondItem="olV-8o-8ev" secondAttribute="firstBaseline" id="yWx-JB-HCy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="JWC-Op-OB7" id="L17-Iy-cIG"/>
+                        <outlet property="mapView" destination="ydd-tA-hjJ" id="QDu-Ma-dzn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
