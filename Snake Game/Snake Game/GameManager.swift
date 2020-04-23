@@ -205,10 +205,7 @@ class GameManager {
                 node.fillColor = SKColor.clear
                 if scene.scorePos != nil {
                     if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
-                        let appleColors = [SKColor.red, SKColor.yellow, SKColor.green]
-                        let index = Int.random(in: 0...2)
-                        let color = appleColors[index]
-                        node.fillColor = color
+                        node.fillColor = SKColor.red
                     }
                 }
             }
