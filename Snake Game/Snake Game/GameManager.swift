@@ -24,6 +24,9 @@ class GameManager {
     var timeExtension: Double = 0.15
     var playerDirection: Direction = .left
     var currentScore: Int = 0
+//    let appleColors = [SKColor.red, SKColor.green, SKColor.yellow]
+//    let index = Int.random(in: 0...2)
+//    let color = appleColors[index]
     
     init(scene: GameScene) {
         self.scene = scene
@@ -202,12 +205,20 @@ class GameManager {
                 node.fillColor = SKColor.clear
                 if scene.scorePos != nil {
                     if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
-                        node.fillColor = SKColor.red
+                        let appleColors = [SKColor.red, SKColor.yellow, SKColor.green]
+                        let index = Int.random(in: 0...2)
+                        let color = appleColors[index]
+                        node.fillColor = color
                     }
                 }
             }
         }
     }
+    
+    
+
+    
+    
     
     func contains(a:[(Int, Int)], v:(Int,Int)) -> Bool {
         let (c1, c2) = v
