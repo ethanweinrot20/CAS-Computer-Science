@@ -24,9 +24,6 @@ class GameManager {
     var timeExtension: Double = 0.15
     var playerDirection: Direction = .left
     var currentScore: Int = 0
-//    let appleColors = [SKColor.red, SKColor.green, SKColor.yellow]
-//    let index = Int.random(in: 0...2)
-//    let color = appleColors[index]
     
     init(scene: GameScene) {
         self.scene = scene
